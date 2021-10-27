@@ -5,6 +5,10 @@ import createConnection from '@shared/infra/typeorm';
 
 import { AppError } from "@shared/errors/AppError";
 
+import { router } from "./routes";
+
+import "@shared/container";
+
 createConnection();
 
 const app = express();
@@ -12,6 +16,8 @@ const app = express();
 app.use(express.json());
 
 app.use(cors());
+
+app.use("/api", router)
 
 // errors
 app.use((err: Error, request: Request, response: Response, next: NextFunction) => {
