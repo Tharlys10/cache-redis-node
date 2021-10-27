@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  redis:
+    container_name: redis
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=redis
+    volumes:
+      - "./data:/home/docker/data"
+    networks:
+      - stack
+
+networks:
+  stack:
+    name: stack
+    driver: bridge
