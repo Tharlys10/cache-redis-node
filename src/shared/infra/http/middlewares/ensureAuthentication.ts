@@ -22,7 +22,7 @@ export async function ensureAuthentication(request: Request, response: Response,
     request.user = {
       id: user_id
     }
-
+    
     next();
   } catch {
     throw new AppError("Token invalid!", 401);
