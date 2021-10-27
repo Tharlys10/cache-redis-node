@@ -1,0 +1,22 @@
+{
+  "name": "cache-redis-node",
+  "version": "1.0.0",
+  "repository": "git@github.com:Tharlys10/cache-redis-node.git",
+  "author": "tharlys10 <tharlys2015c@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "typeorm": "^0.2.38"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.4"
+  }
+}
