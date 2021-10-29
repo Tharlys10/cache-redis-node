@@ -44,7 +44,7 @@ docker-compose up
 ```
 
 - Agora é necessairo que voce rode as migrations:
-  <h6>Obs: caso tenha o node instalado na maquina basta abrir outro terminal no diretorio do projeto e roda o comando npm run typeorm migration:run</h6>
+  <h6>Obs: caso tenha o node instalado na maquina basta abrir outro terminal no diretorio do projeto e roda o comando: </h6>
 
 ```sh
 npm run typeorm migration:run
